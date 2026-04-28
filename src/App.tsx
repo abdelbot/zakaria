@@ -14,6 +14,8 @@ import {
   ChevronLeft
 } from "lucide-react";
 import { useState } from "react";
+import profileImage from "./assets/id.jpeg";
+import flnLogo from "./assets/fln.png";
 
 const cvData = {
   personalInfo: {
@@ -23,7 +25,7 @@ const cvData = {
     politicalAffiliation: "حزب جبهة التحرير الوطني",
     currentPosition: "مفتش قسم – مصالح أملاك الدولة",
     academicLevel: "دكتور",
-    image: "/src/assets/id.jpeg" // Profile picture
+    image: profileImage // Profile picture
   },
   summary: "إطار إداري وباحث أكاديمي متخصص في القانون الدولي الاقتصادي، يجمع بين تكوين قانوني أكاديمي رفيع المستوى وخبرة ميدانية معمّقة في تسيير ومراقبة العقار العمومي وإطار الاستثمار. يُعدّ من المناضلين المنخرطين في العمل السياسي والمدني تحت لواء حزب جبهة التحرير الوطني، مع حضور فاعل في الهيئات الاستشارية الوطنية ومنظمات المجتمع المدني. يرى في الترشح فرصة لتعزيز دور المؤسسات في خدمة التنمية المستدامة وتجسيد قيم المشاركة الديمقراطية.",
   sections: [
@@ -390,7 +392,7 @@ export default function App() {
         <div className="container px-4 mx-auto max-w-5xl text-center">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-12 h-px bg-slate-200"></div>
-            <img src="/src/assets/fln.png" alt="FLN Logo" className="w-10 h-10 opacity-50" />
+            <img src={flnLogo} alt="FLN Logo" className="w-10 h-10 opacity-50" />
             <div className="w-12 h-px bg-slate-200"></div>
           </div>
           <p className="text-slate-400 text-sm font-medium">سحنون زكرياء عبد المجيد | مترشح حزب جبهة التحرير الوطني</p>
